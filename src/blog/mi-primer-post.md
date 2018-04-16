@@ -1,5 +1,5 @@
 ---
-title: "Sweet Pandas Eating Sweets"
+title: "Este es un blog de Prueba"
 date: "2017-08-10"
 ---
 
