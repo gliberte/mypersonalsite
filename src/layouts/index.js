@@ -39,6 +39,10 @@ const UL = styled.ul`
   li a{
     color:white;
     font-weight:bold;
+    transition:all 0.3s linear;
+  }
+  li a:hover{
+    color:yellow;
   }
   
   

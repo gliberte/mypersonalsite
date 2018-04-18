@@ -37,15 +37,21 @@ const Img = styled.img`
 
 `
 
+const Span = styled.span`
+font-family: 'Titillium Web', sans-serif;
+font-weight:bold;
+`
+
 export default () => {
     return (
         <SeccionPrincipal>
 
             <Img src={Me} alt="" />
             <Introduccion>
-            <p>
-            Hola, Mi nombre es Luis Solano. Soy aficionado al desarrollo de aplicaciones web y mobiles, usando única y exclusivamente
-    Javascript, con tecnologías como ReactJs para el front-end, Node Js para el back-end, GraphQL para el desarrollo de interfaces de datos.
+                <p>
+                    Hola, Mi nombre es Luis Solano. Soy aficionado al desarrollo de aplicaciones web y mobiles, usando única y exclusivamente
+    Javascript, con tecnologías como <Span>ReactJs</Span>  para el front-end, <Span>Node Js</Span>  para el back-end,
+    <Span>GraphQL</Span>  para el desarrollo de interfaces de datos.
             </p>
             </Introduccion>
         </SeccionPrincipal>
