@@ -17,8 +17,8 @@ const SeccionPrincipal = styled.section`
 
 `
 const Introduccion = styled.div`
-    font-family: 'Courgette', cursive;
-    font-size:1.3em;
+    font-family: 'East Sea Dokdo', cursive;
+    font-size:1.7em;
     width:70%;
     justify-self:start;
     display:flex;

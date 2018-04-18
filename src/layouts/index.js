@@ -50,7 +50,7 @@ const UL = styled.ul`
 
 
 injectGlobal`
-  @import url('https://fonts.googleapis.com/css?family=Courgette|Titillium+Web');
+  @import url('https://fonts.googleapis.com/css?family=Cinzel|Courgette|East+Sea+Dokdo|Titillium+Web');
 `
 
 export default ({ children, data }) => (
