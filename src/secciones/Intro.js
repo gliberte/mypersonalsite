@@ -18,6 +18,7 @@ const SeccionPrincipal = styled.section`
 `
 const Introduccion = styled.div`
     font-family: 'Courgette', cursive;
+    font-size:1.3em;
     width:70%;
     justify-self:start;
     display:flex;
@@ -49,8 +50,7 @@ export default () => {
             <Img src={Me} alt="" />
             <Introduccion>
                 <p>
-                    Hola, Mi nombre es Luis Solano. Soy aficionado al desarrollo de aplicaciones web y mobiles, usando única y exclusivamente
-    Javascript, con tecnologías como <Span>ReactJs</Span>  para el front-end, <Span>Node Js</Span>  para el back-end,
+                    Hola, Mi nombre es Luis Solano. Soy un profesional del desarrollo de aplicaciones web y mobiles usando única y exclusivamente <Span>Javascript</Span>, con tecnologías como <Span>ReactJs</Span>  para el front-end, <Span>Node Js</Span>  para el back-end,
     <Span>GraphQL</Span>  para el desarrollo de interfaces de datos.
             </p>
             </Introduccion>
