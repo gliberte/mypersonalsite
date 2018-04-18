@@ -1,43 +1,68 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import styled from 'styled-components'
+import styled,{injectGlobal} from 'styled-components'
 
-const Titulo = styled(Link) `
-  text-shadow:none;
-  background-image:none;
-  h3{
-    display:inline;
-  }
+import WallCabecera from '../img/wall-cabecera.jpg'
+import bosque from '../img/bosque.jpg'
+import laptop from '../img/laptop.jpg'
+
+const Titulo = styled.div`
+  display:inline;
 `
 const Container = styled.div`
   margin:0 auto;
-  max-width:750px;
-  padding:0 1rem;
 `
 const ItemLink = styled.li`
   display:inline-block;
   margin-right:1rem;
 `
 const Cabecera = styled.header`
-  margin-bottom:1.5rem
+  
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  justify-items:center;
+  align-items:center;
+  background-image:url(${bosque});
+  height:200px;
+  
 `
 const UL = styled.ul`
   list-style:none;
-  float:right;
+  margin:0;
+  padding:0;
+  text-align:center;
+  background:#212121;
+  li{
+    display:inline-block;
+    margin-top:1rem;
+  }
+  li a{
+    color:white;
+    font-weight:bold;
+  }
+  
+  
 `
 
+
+injectGlobal`
+  @import url('https://fonts.googleapis.com/css?family=Courgette|Titillium+Web');
+`
 
 export default ({ children, data }) => (
   <Container>
     <Cabecera>
-      <Titulo to={'/'}>
-        <h3>{data.site.siteMetadata.title}</h3>
+
+      <Titulo>
+        
       </Titulo>
-      <UL>
+      
+    </Cabecera>
+    <UL>
         <ItemLink><Link to="/">Home</Link></ItemLink>
         <ItemLink><Link to="/about">Acerca</Link></ItemLink>
+        <ItemLink><Link to="/blog">Blog</Link></ItemLink>
       </UL>
-    </Cabecera>
 
     {children()}
   </Container>

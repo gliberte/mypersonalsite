@@ -2,32 +2,24 @@ import React from "react";
 import styled from "styled-components";
 import Link from 'gatsby-link'
 
+import Intro from '../secciones/Intro'
+
+const Container = styled.div`
+  
+`
+
 
 export default ({ data }) => {
   console.log(data);
   return (
-    <div>
-      <h1>
-        Amazing Pandas Eating Things
-      </h1>
-      <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
-      {data.allMarkdownRemark.edges.map(({ node }) => (
-        <div key={node.id}>
-          <Link
-            to={node.fields.slug}
-            css={{ textDecoration: 'none', color: `inherit` }}
-          >
-            <h3>
-              {node.frontmatter.title}{" "}
-              <span color="#BBB">— {node.frontmatter.date}</span>
-            </h3>
-            <p>{node.excerpt}</p>
-          </Link>
+    <Container>
+      <Intro/>
+      
+    </Container>
 
-        </div>
-      ))}
-    </div>
-  );
+
+  )
+
 };
 
 export const query = graphql`
