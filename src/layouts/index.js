@@ -24,7 +24,13 @@ const Cabecera = styled.header`
   align-items:center;
   background-image:url(${bosque});
   height:200px;
-  
+
+  @media (max-width:768px){
+
+  }
+  @media (max-width:360px){
+    height:0;
+  }
 `
 const UL = styled.ul`
   list-style:none;
@@ -57,10 +63,6 @@ export default ({ children, data }) => (
   <Container>
     <Cabecera>
 
-      <Titulo>
-        
-      </Titulo>
-      
     </Cabecera>
     <UL>
         <ItemLink><Link to="/">Home</Link></ItemLink>
